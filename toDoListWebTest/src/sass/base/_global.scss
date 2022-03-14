@@ -1,0 +1,52 @@
+@use 'variables' as v;
+
+html {
+    font-size: 62.5%; // Reset 1rem = 10px
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: v.$mainFontFamily;
+    font-size: 1.8rem;
+    overflow-x: hidden;
+    background-color: v.$bodyBackgroundColor;
+    min-height: 100vh;
+    position: relative;
+    transition: 0.3s;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+ol{
+    padding: 0;
+    margin: 0;
+}
+
+li{
+    list-style: none;
+}
+
+h1{
+    font-size: 5rem;
+}
+
+.container{
+    width: 95%;
+    max-width: 150rem;
+    margin: 0 auto;
+}
+
+
+.section{
+    margin-top: 5rem;
+}

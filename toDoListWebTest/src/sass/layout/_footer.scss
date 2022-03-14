@@ -1,0 +1,22 @@
+@use "base/variables" as v;
+
+.footer-page {
+    background-color: rgb(202, 202, 202);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 5rem;
+    p{
+        font-size: 1.6rem;
+        margin: 0;
+        text-align: center;
+        padding: 1.5rem 0;
+        a{
+            color: v.$black;
+            transition: .3s ease-in-out;
+            &:hover{
+                color: v.$white;
+            }
+        }
+    }
+}

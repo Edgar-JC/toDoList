@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+
+
+#btnDeleteContainer{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10rem;
+    #btnRemoveAll{
+        background-color: v.$redLogoDelete;
+        cursor: pointer;
+        border: transparent;
+        border-radius: v.$borderRadius;
+        padding: 2rem 4rem;
+        color: v.$white;
+        transition: background-color v.$transitionTime ease-in-out;
+        &:hover{
+            background-color: v.$redDk;
+        }
+    }
+}

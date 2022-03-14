@@ -1,0 +1,52 @@
+@use 'base/variables' as v;
+
+
+
+
+.dark-mode.body {
+    background-color: v.$darkModeBlackDk;
+}
+
+.dark-mode.header{
+    background-color: v.$darkModeBlackLght;
+
+}
+
+.dark-mode#taskName{
+    background-color: v.$darkModeBlackLght;
+    border: 2px solid v.$darkModeBlackLght;
+}
+
+.dark-mode#btnSaveTask {
+    background-color: v.$darkModeBlackLght;
+    color: v.$white;
+}
+
+.dark-mode.task {
+    background-color: v.$darkModeBlackLght;
+    color: v.$white;
+}
+
+.dark-mode.input-edit{
+    background-color: v.$darkModeBlackLght;
+    border: 2px solid v.$darkModeBlackLght;
+    color: v.$white;
+}
+
+.fa-sun.dark-mode, .fa-moon.dark-mode{
+    color: white;
+}
+
+.dark-mode.footer-page{
+    background-color: v.$darkModeBlackLght;
+    p{
+        color: v.$white;
+        a{
+            color: v.$backgroundHeaderColor;
+            &:hover{
+                color: #344dbd;
+            }
+        }
+    }
+    
+}

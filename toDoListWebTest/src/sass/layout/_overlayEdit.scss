@@ -1,0 +1,66 @@
+@use "base/variables" as v;
+
+.overlay-edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba($color: #000000, $alpha: .7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 99;
+
+}
+.window-edit {
+    position: fixed;
+    top: 25%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 2rem;
+    .input-edit {
+        grid-column: 1/3;
+        min-height: 6rem;
+        padding: 1rem;
+        border-radius: v.$borderRadius;
+        border: solid 2px v.$white;
+        outline: none;
+        transition: border-color ease-in-out v.$transitionTime;
+        &:hover{
+            border-color: #B4C1F8;
+        }
+        &:focus{
+            border-color: #6983F1;
+        }
+    }
+
+    .btn-save-edit {
+        background-color: v.$backgroundHeaderColor;
+        justify-self: end;
+        cursor: pointer;
+        border: transparent;
+        border-radius: v.$borderRadius;
+        padding: 2rem 4rem;
+        color: v.$white;
+        transition: background-color v.$transitionTime ease-in-out;
+        &:hover{
+            background-color: #3a54c7;
+        }
+    }
+
+    .btn-exit {
+        border: none;
+        justify-self: start;
+        cursor: pointer;
+        background-color: v.$redLogoDelete;
+        border-radius: v.$borderRadius;
+        color: v.$white;
+        padding: 2rem 4rem;
+        transition: background-color v.$transitionTime ease-in-out;
+        &:hover{
+            background-color: v.$redDk;
+        }
+    }
+}

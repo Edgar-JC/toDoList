@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+
+.edit-window{
+    width: 15rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$backgroundHeaderColor;
+    color: v.$white;
+    position: absolute;
+    right: 5rem;
+    border-radius: v.$borderRadius;
+    -webkit-box-shadow: 0px 2px 16px -1px rgba(0,0,0,0.20); 
+    box-shadow: 0px 0px 16px 0px rgba(0,0,0,0.20);
+    p{
+        margin: 0;
+    }
+    .icon-window{
+        cursor: pointer;
+        font-size: 2.5rem;
+    }
+    .complete{
+        transition: v.$transitionTime ease-in-out;
+        &:hover{
+            color: v.$greenLogoComplete;
+        }
+    }
+    .edit{
+        transition: v.$transitionTime ease-in-out;
+        &:hover{
+            color: #fce903;
+        }
+    }
+    .delete{
+        transition: v.$transitionTime ease-in-out;
+        &:hover{
+            color: v.$redLogoDelete;
+        }
+    }
+}
